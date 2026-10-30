@@ -4,9 +4,9 @@
 
 - **Musawar Ahmad ()** - Group Leader, IAM, Elastic Load Balancing, CloudWatch, Automation
 - **Mohammad Emon ()** - Frontend: Webapp UI/UX,Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages
-- **Ernest Divina ()** - Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages with Mohammad
 - **Charles Gerard Serrato ()** - Backend: Verifier Lambda, EventBridge, GeoNet API, part of Ingestion Lambda
 - **Jed Thomson ()** - Backend: Notifier Lambda, DynamoDB, SQS, SES, Backend Ingestion
+- **Ernest Divina ()** - Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages with Mohammad
 
 ## Overview
 
