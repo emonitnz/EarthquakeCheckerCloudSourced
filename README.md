@@ -2,11 +2,11 @@
 
 ## DYFT Team
 
-- **Musawar Ahmad (1629548)** - Group Leader, IAM, Elastic Load Balancing, CloudWatch, Automation
-- **Ernest Divina (1627071)** - Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages with Mohammad
-- **Charles Gerard Serrato (1625871)** - Backend: Verifier Lambda, EventBridge, GeoNet API, part of Ingestion Lambda
-- **Jed Thomson (1709677)** - Backend: Notifier Lambda, DynamoDB, SQS, SES, Backend Ingestion
-- **Mohammad Emon (1640350)** - Frontend: Webapp UI/UX
+- **Musawar Ahmad ()** - Group Leader, IAM, Elastic Load Balancing, CloudWatch, Automation
+- **Mohammad Emon ()** - Frontend: Webapp UI/UX,Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages
+- **Ernest Divina ()** - Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages with Mohammad
+- **Charles Gerard Serrato ()** - Backend: Verifier Lambda, EventBridge, GeoNet API, part of Ingestion Lambda
+- **Jed Thomson ()** - Backend: Notifier Lambda, DynamoDB, SQS, SES, Backend Ingestion
 
 ## Overview
 
