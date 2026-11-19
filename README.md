@@ -16,6 +16,12 @@ Logged-in users can submit a report at any time by selecting the "I Felt That" b
 
 Every 15 minutes, the system fetches confirmed seismic data from GeoNet, filtering for earthquakes with a Modified Mercalli Intensity (MMI) rating of 4 or higher. The platform automatically cross-references user submissions against this data. If a report is submitted within 30 minutes of a confirmed quake and falls within a 50 km radius of its epicentre, the system verifies the report and sends an email notification to the user.
 
+## Screenshot
+
+![Earthquakes Near You page: an "I FELT THAT" button above a map of Hamilton showing the user's location and recent reports](docs/earthquake-map.png)
+
+*The "Earthquakes Near You" page: users tap **I FELT THAT** to report a shake and see other reports from the last 30 minutes.*
+
 ## AWS Architecture
 
 - **Amazon Application Load Balancer**: Distributes incoming application traffic across Amazon EC2 instances to maintain the app's availability and stability.
