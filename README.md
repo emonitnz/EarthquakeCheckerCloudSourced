@@ -2,11 +2,11 @@
 
 ## DYFT Team
 
-- **Musawar Ahmad ()** - Group Leader, IAM, Elastic Load Balancing, CloudWatch, Automation
-- **Mohammad Emon ()** - Frontend: Webapp UI/UX,Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages
-- **Charles Gerard Serrato ()** - Backend: Verifier Lambda, EventBridge, GeoNet API, part of Ingestion Lambda
-- **Jed Thomson ()** - Backend: Notifier Lambda, DynamoDB, SQS, SES, Backend Ingestion
-- **Ernest Divina ()** - Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages with Mohammad
+- **Musawar Ahmad** - Group Leader, IAM, Elastic Load Balancing, CloudWatch, Automation
+- **Mohammad Emon** - Frontend: Webapp UI/UX, Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages
+- **Charles Gerard Serrato** - Backend: Verifier Lambda, EventBridge, GeoNet API, part of Ingestion Lambda
+- **Jed Thomson** - Backend: Notifier Lambda, DynamoDB, SQS, SES, Backend Ingestion
+- **Ernest Divina** - Cognito and User management, Backend: Cognito Lambda, and Frontend: part user login/registration pages with Mohammad
 
 ## Overview
 
@@ -22,7 +22,7 @@ Every 15 minutes, the system fetches confirmed seismic data from GeoNet, filteri
 
 - **Amazon EC2**: Hosts the web application server; serves user interfaces and frontend traffic management.
 
-- **Amazon API Gateway + Amazon Lambda (Ingestion)**: Processes user report submissions fron the frontend and writes new reports directly into the `DYFT-REPORTS` DynamoDB table
+- **Amazon API Gateway + Amazon Lambda (Ingestion)**: Processes user report submissions from the frontend and writes new reports directly into the `DYFT-REPORTS` DynamoDB table
 
 - **Amazon DynamoDB**: Partitioned into two tables: `DYFT-REPORTS` which stores user report items, and `DYFT-USERS` which stores user account information.
 
@@ -32,7 +32,7 @@ Every 15 minutes, the system fetches confirmed seismic data from GeoNet, filteri
 
 - **GeoNet API**: Acts as the external source of truth, providing real-time seismic feature data to the `Verifier` Lambda.
 
-- **Amazon Lambda (Notifier)**: Triggered by the `DYFT-DidYouQueueThat` SQS queue, sends email notifications to users who have had their report verified by the `Verfier`.
+- **Amazon Lambda (Notifier)**: Triggered by the `DYFT-DidYouQueueThat` SQS queue, sends email notifications to users who have had their report verified by the `Verifier`.
 
 - **Amazon SQS**: Buffers notification messages from the `Verifier` Lambda to the `Notifier` Lambda which sends them downstream to Amazon SES.
 
@@ -64,11 +64,11 @@ These environment variables are optional:
 
 For testing DYFT notification emails, register the DYFT account with the same verified email address supplied as `SES_SENDER_EMAIL`. Using the same email for `OPERATIONS_ALERT_EMAIL` and `SES_SENDER_EMAIL` is the simplest testing setup, but both variables remain independently optional.
 
-**NOTE:** Either verification link can go to the Spam.
+**NOTE:** Either verification email may land in your spam folder.
 
 ### Optional Verifier Data Source
 
-Mock earthquake data is enabled by default for assignment testing:
+Mock earthquake data is enabled by default for assignment testing (`USE_MOCK_DATA=true`). To verify reports against live GeoNet data instead, set `USE_MOCK_DATA=false` when running `deploy.sh` (see the example below).
 
 ## Deploy
 
